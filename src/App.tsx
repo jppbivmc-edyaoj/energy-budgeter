@@ -195,9 +195,12 @@ export default function App() {
       {/* Header */}
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <h1 className="text-4xl md:text-6xl font-display font-black tracking-tighter text-[#B45F2B]">
-            ENERGY <span className="text-[#6B2E00]">CRISIS</span> COMMAND
-          </h1>
+          <a href="/" className="inline-block hover:opacity-80 transition-opacity flex items-center gap-4">
+            <img src="/logo.png" alt="Energy Budgeter Logo" className="w-12 h-12 md:w-16 md:h-16 rounded-2xl shadow-lg border-2 border-white/20" />
+            <h1 className="text-3xl md:text-5xl font-display font-black tracking-tighter text-[#1C5142]">
+              ENERGY <span className="text-[#00A651]">BUDGETER</span>
+            </h1>
+          </a>
           <nav className="flex gap-4 mt-4">
             {(['dashboard', 'cook', 'audit', 'appliances'] as Tab[]).map((tab) => (
               <button
